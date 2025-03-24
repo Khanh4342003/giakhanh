@@ -1,0 +1,65 @@
+/* dangky.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register-container {
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    max-height: 90vh;
+    /* Giới hạn chiều cao tối đa */
+    overflow-y: auto;
+    /* Thêm thanh cuộn nếu nội dung quá dài */
+}
+
+.register-container h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    background: #ff4747;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background: #e63c3c;
+}
+
+.back-to-login {
+    margin-top: 10px;
+}
+
+.back-to-login a {
+    text-decoration: none;
+    color: #ff4747;
+}
+
+.back-to-login a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,114 @@
+/* ----- RESET CSS ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ----- HEADER CONTAINER ----- */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+}
+
+
+/* ----- LOGO ----- */
+
+.logo img {
+    height: 50px;
+}
+
+
+/* ----- NAVIGATION MENU ----- */
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #ff6600;
+    border-radius: 5px;
+}
+
+
+/* ----- SLIDER SECTION ----- */
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.feature-slides img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* ----- ABOUT SECTION ----- */
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.underline {
+    width: 100px;
+    height: 3px;
+    background: #ff6600;
+    margin: 10px auto;
+}
+
+
+/* ----- FOOTER ----- */
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+/* ----- RESPONSIVE NAVIGATION (MOBILE) ----- */
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
